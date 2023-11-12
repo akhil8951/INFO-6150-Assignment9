@@ -7,6 +7,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Jobs from "./components/Jobs/Jobs";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="contactus" element={<ContactUs />} />
             <Route path="jobs" element={<Jobs />} />
+            <Route path="login" element={<Login />} />
           </Route>
         </Routes>
       </BrowserRouter>
