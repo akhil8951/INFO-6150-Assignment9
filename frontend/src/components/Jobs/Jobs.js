@@ -1,4 +1,4 @@
-function Jobs() {
+const Jobs = () => {
   return <></>;
-}
+};
 export default Jobs;

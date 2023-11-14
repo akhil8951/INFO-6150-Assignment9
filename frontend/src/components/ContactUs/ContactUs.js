@@ -1,4 +1,4 @@
-function ContactUs() {
+const ContactUs = () => {
   return <></>;
-}
+};
 export default ContactUs;

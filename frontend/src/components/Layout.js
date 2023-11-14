@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { Outlet } from "react-router-dom";
 // import "../styles/css/";
 
-function Layout() {
+const Layout = () => {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
@@ -16,12 +16,12 @@ function Layout() {
           <Nav>
             <Nav.Link href="/jobs">Jobs</Nav.Link>
             <Nav.Link href="/contactus">Contact Us</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/login">Logout</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       <Outlet />
     </>
   );
-}
+};
 export default Layout;

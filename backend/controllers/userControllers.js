@@ -47,7 +47,7 @@ exports.updateUser = async (request, response) => {
     response.status(400).json({ message: error.message });
   }
 };
-exports.deleteuser = async (request, response) => {
+exports.deleteUser = async (request, response) => {
   try {
     const userEmailId = request.query.emailId;
     if (!userEmailId) {
@@ -58,6 +58,24 @@ exports.deleteuser = async (request, response) => {
       deletCount: deleteUser.deletedCount,
       message: "Deleted Successfully",
     });
+  } catch (error) {
+    response.status(400).json({ message: error.message });
+  }
+};
+exports.authenticateUser = async (request, response) => {
+  try {
+    const { emailId, password } = await request.body;
+
+    const user = await User.findOne({ emailId: emailId });
+    if (!user) {
+      return response.status(400).json({ message: "user not found" });
+    }
+    const passwordMatch = await bcrypt.compare(password, user.password);
+    if (passwordMatch) {
+      return response.status(200).json({ message: "login successful!" });
+    } else {
+      return response.status(400).json({ message: "Incorrect Password" });
+    }
   } catch (error) {
     response.status(400).json({ message: error.message });
   }

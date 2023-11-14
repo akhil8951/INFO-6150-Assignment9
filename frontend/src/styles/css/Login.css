@@ -1,7 +1,20 @@
 .container {
-  border: 2px solid white;
+  border-radius: 10px;
   align-items: center;
   justify-content: center;
   padding: 50px;
   margin-top: 100px;
+}
+.container .formGroup-custom {
+  width: 50vh;
+}
+.container .formGroup-custom .spanErrorMessage {
+  color: red;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+.container .button-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }/*# sourceMappingURL=Login.css.map */

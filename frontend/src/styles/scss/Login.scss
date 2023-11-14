@@ -1,7 +1,20 @@
 .container {
-  border: 2px solid white;
+  // border: 2px solid white;
+  border-radius: 10px;
   align-items: center;
   justify-content: center;
   padding: 50px;
   margin-top: 100px;
+  .formGroup-custom {
+    width: 50vh;
+    .spanErrorMessage {
+      color: red;
+      text-decoration: solid;
+    }
+  }
+  .button-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 }

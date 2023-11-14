@@ -1,12 +1,15 @@
 import "../../styles/css/Home.css";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="main">
-        <h1>Hi this is Home </h1>
+        <div className="main-content">
+          <h1>Dream Luxury, Live Luxury ! </h1>
+          <h3>Book a car, get it delivered to your Doorstep</h3>
+        </div>
       </div>
     </>
   );
-}
+};
 export default Home;
