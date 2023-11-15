@@ -1,4 +1,4 @@
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import "../../styles/css/Login.css";
 import { useState } from "react";
 import axios from "axios";
@@ -30,7 +30,7 @@ const Login = () => {
 
   return (
     <>
-      <Container className="container">
+      <Card className="card-login">
         <Row className="justify-content-md-center">
           <Col md="auto">
             <h2>Login</h2>
@@ -91,7 +91,7 @@ const Login = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Card>
     </>
   );
 };

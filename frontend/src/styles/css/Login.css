@@ -1,19 +1,21 @@
-.container {
+.card-login {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  margin-top: 100px;
+  padding: 5rem;
+  margin: 5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.container .formGroup-custom {
+.card-login .formGroup-custom {
   width: 50vh;
 }
-.container .formGroup-custom .spanErrorMessage {
+.card-login .formGroup-custom .spanErrorMessage {
   color: red;
   -webkit-text-decoration: solid;
           text-decoration: solid;
 }
-.container .button-container {
+.card-login .button-container {
   justify-content: center;
   align-items: center;
   display: flex;

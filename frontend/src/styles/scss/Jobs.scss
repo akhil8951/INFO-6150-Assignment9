@@ -1,0 +1,21 @@
+.main-jobs {
+  height: 100vh;
+  width: 99vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../../public/images/bmw2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .title {
+    display: flex;
+    margin: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .container-jobs {
+    display: flex;
+    width: 100vw;
+  }
+}

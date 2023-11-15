@@ -1,0 +1,30 @@
+.main-contactUs {
+  height: 100vh;
+  width: 99vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../../public/images/bmw2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .title-ContactUs {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 2rem;
+  }
+  .card-contactUs {
+    text-align: center;
+    margin: 5rem;
+    padding: 3rem;
+    color: white;
+    background-color: rgba($color: white, $alpha: 0.1);
+  }
+  .innerContainer-contactUs {
+    background-color: rgba($color: white, $alpha: 0.2);
+    text-align: justify;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+}

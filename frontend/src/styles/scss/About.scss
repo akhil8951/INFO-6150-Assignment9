@@ -1,0 +1,25 @@
+.main-about {
+  height: 100vh;
+  width: 99vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url("../../../public/images/bmw2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  .title-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .card-about {
+    text-align: center;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    color: white;
+    padding: 5rem;
+    margin: 2rem;
+  }
+}
